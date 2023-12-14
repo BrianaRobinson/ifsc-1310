@@ -1,0 +1,154 @@
+/*CSS Demo Project - #176BE8, #1729E8, #17ADE8, #9D2FF0*/
+
+/* -------Box Sizing--------- */
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/*  --------------- Responsive Images -----------------  */
+
+img {
+    max-width: 100%;
+  }
+/*  --------------- Utility Styles -----------------  */
+
+.container {
+    width: 80vw;
+    margin: 40px auto;
+  }
+  
+  .img-right {
+    float: right;
+    margin: 10px 0 10px 20px;
+    border: 4px double #c0c0c0;
+    padding: 5px;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.4);
+  }
+  
+  .img-left {
+    float: left;
+    margin: 10px 20px 10px 0;
+    border: 4px double #c0c0c0;
+    padding: 5px;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.4);
+  }
+  
+  .img-center {
+    border: 4px double #c0c0c0;
+    padding: 5px;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.4);
+    display: block;
+    margin: 20px auto;
+  }
+/* -------Global Styles--------- */
+header.primary {
+    background-color:#176BE8 ;
+    color:#fff;
+    text-align:center;
+    text-decoration: none;
+}
+body{
+    font-family: 'Rokkitt', serif;
+    padding: 40px;
+    padding :20px 40px 20px 40px;
+    text-shadow: 1px 1px #000000;
+}
+header.primary h1 {
+    font-size: 2.4rem;
+    margin: 20px;
+}
+header.primary h1 a{
+    color:#fff;
+    text-decoration: none;
+}
+header.primary h2{
+    font-size: 1.4rem;
+}
+header.primary nav {
+    max-width: 1060px;
+    margin-left:  40px auto 20px auto;
+}
+header.primary nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+  
+  header.primary nav ul li {
+    list-style-type: none;
+  }
+  header.primary nav a {
+    color: #ffffff;
+    font-size: 0.8rem;
+    text-decoration: none;
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: 0.5s;
+    border: 1px solid #000;
+  } 
+  header.primary nav a:hover,
+  header.primary nav a:active {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#intro{
+    border-bottom: 1px solid #c0c0c0;
+    padding-bottom:14px;
+}
+#intro h2{
+    color:#9D2FF0;
+    border-bottom: 1px solid #c0c0c0;
+}
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px dotted #c0c0c0;
+    padding-bottom: 2.6rem;
+  }
+  
+  #content article.post {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    font-size: 0.8rem;
+    transition: 0.5s;
+  }
+  #content article.post:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  article.post figure {
+    margin: 0;
+  }
+/*  ---------------Media Queries-----------------  */
+
+@media screen and (max-width: 600px) {
+    header.primary nav ul {
+      flex-direction: column;
+      max-width: 250px;
+      margin: auto;
+      gap: 10px;
+    }
+    header.primary nav ul a {
+      display: block;
+    }
+    #content {
+      flex-direction: column;
+    }
+    #content img {
+      display: block;
+      margin: 20px auto;
+    }
+    aside .container {
+      flex-direction: column;
+    }
+  }
+  
